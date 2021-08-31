@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+  function fill(control) {
+    document.getElementById("main").style.background= "orange";
+  }
+  function fill1(control) {
+    document.getElementById("main").style.background= "white";
+  }
+  function fill2(control) {
+    document.getElementById("main").style.background= "green";
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id='main'>
+        <div id="div1" onClick={(e) => fill("main")}></div>
+        <div id="div2" onClick={(e) => fill1("main")}></div>
+        <div id="div3" onClick={(e) => fill2("main")}></div>
+    </div>
     </div>
   );
 }

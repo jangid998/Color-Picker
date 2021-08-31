@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #265ac2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #dd0143;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +35,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+    #main{
+      min-height: 100vh;
+      background-color: rgb(255, 0, 0);
+    }
+#div1,#div2,#div3{
+  float: left;
+  float: top;
+}
+#div1{
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+}
+#div2{
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+#div3{
+  background-color: green;
+  width: 100px;
+  height: 100px;
 }
